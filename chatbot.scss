@@ -1,0 +1,89 @@
+@import 'node_modules/foundation-sites/scss/foundation';
+@include foundation-global-styles;
+@include foundation-grid;
+
+body {
+
+    border: 10px solid lightgray;
+    border-left: 80px solid lightgray;
+    margin: 5%;
+    
+    }
+
+header {
+    @include grid-row(); 
+
+    h1 {
+       @include grid-column(12); 
+       display: block;
+       font-size: 15px;
+       background-color: blue;
+       color: white;
+       margin-top: 0;
+       margin-bottom: 0; 
+
+    }
+}
+
+.chat {
+    border: 1px solid black;
+    margin: 0;
+    
+    
+}
+
+ul {
+    @include grid-row(); 
+    margin-left: 0;
+    display: inline-block;
+    padding-left: 0;
+    
+    
+    
+    li {
+        @include grid-column(12); 
+        list-style-type: none;
+        display: inline-block;
+        margin: 2px;
+
+    p {
+        display: inline;
+        margin-left: 0; 
+        padding-left: 10px;  
+    }
+        
+        
+    span {
+        color: red;     
+        display: inline-block;
+        }
+
+    }
+}
+
+.textbox {
+    @include grid-row(); 
+    border-top: 30px solid lightgray;
+}
+    
+    input {
+        @include grid-column(8);
+        height: 80px;
+        border: 1px solid black;
+    }
+
+    #send {
+        @include grid-column(2); 
+        height: 80px;
+        border: 1px solid black;
+    }
+
+    #getMsg {
+        @include grid-column(2); 
+        height: 80px;
+        border: 1px solid black;
+    }
+
+
+
+
