@@ -1372,6 +1372,126 @@ pre {
         margin-bottom: 0; } }
 
 body {
-  border: 1px solid blue; }
+  border: 10px solid lightgray;
+  border-left: 80px solid lightgray;
+  margin: 5%; }
+
+header {
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto; }
+  header::before, header::after {
+    display: table;
+    content: ' '; }
+  header::after {
+    clear: both; }
+  header h1 {
+    width: 100%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+    display: block;
+    font-size: 15px;
+    background-color: blue;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0; }
+    @media print, screen and (min-width: 40em) {
+      header h1 {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+    header h1:last-child:not(:first-child) {
+      float: right; }
+
+.chat {
+  border: 1px solid black;
+  margin: 0; }
+
+ul {
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-left: 0;
+  display: inline-block;
+  padding-left: 0; }
+  ul::before, ul::after {
+    display: table;
+    content: ' '; }
+  ul::after {
+    clear: both; }
+  ul li {
+    width: 100%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+    list-style-type: none;
+    display: inline-block;
+    margin: 2px; }
+    @media print, screen and (min-width: 40em) {
+      ul li {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+    ul li:last-child:not(:first-child) {
+      float: right; }
+    ul li p {
+      display: inline;
+      margin-left: 0;
+      padding-left: 10px; }
+    ul li span {
+      color: red;
+      display: inline-block; }
+
+.textbox {
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto;
+  border-top: 30px solid lightgray; }
+  .textbox::before, .textbox::after {
+    display: table;
+    content: ' '; }
+  .textbox::after {
+    clear: both; }
+
+input {
+  width: 66.66667%;
+  float: left;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  height: 80px;
+  border: 1px solid black; }
+  @media print, screen and (min-width: 40em) {
+    input {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem; } }
+  input:last-child:not(:first-child) {
+    float: right; }
+
+#send {
+  width: 16.66667%;
+  float: left;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  height: 80px;
+  border: 1px solid black; }
+  @media print, screen and (min-width: 40em) {
+    #send {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem; } }
+  #send:last-child:not(:first-child) {
+    float: right; }
+
+#getMsg {
+  width: 16.66667%;
+  float: left;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  height: 80px;
+  border: 1px solid black; }
+  @media print, screen and (min-width: 40em) {
+    #getMsg {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem; } }
+  #getMsg:last-child:not(:first-child) {
+    float: right; }
 
 /*# sourceMappingURL=chatbot.css.map */
